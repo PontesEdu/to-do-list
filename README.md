@@ -1,97 +1,76 @@
-📝 To-Do List App
+✅ To-Do List — React + Zustand + Shadcn UI
 
-Este é um projeto de To-Do List desenvolvido para praticar React, gerenciamento de estado, interface moderna e persistência de dados.
-O usuário pode adicionar, editar, remover e marcar tarefas como concluídas. Todas as informações ficam salvas automaticamente no localStorage, garantindo que nada seja perdido ao recarregar a página.
+Aplicação Front-End
 
+Uma To-Do List moderna, rápida e organizada, construída com React, Zustand, Shadcn UI, Tailwind CSS, React Hook Form e persistência com localStorage.
+Meu foco neste projeto foi criar uma experiência simples e eficiente, com design limpo e componentes profissionais.
+
+<br/>
 🚀 Tecnologias Utilizadas
-⚛️ React + TypeScript
+<p align="left"> <img width="45" title="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> <img width="45" title="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /> <img width="45" title="Zustand" src="https://raw.githubusercontent.com/stefanprobst/zustand-logo/main/dist/zustand.svg" /> <img width="45" title="Shadcn UI" src="https://ui.shadcn.com/apple-touch-icon.png" /> <img width="45" title="Tailwind CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" /> <img width="45" title="React Hook Form" src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.svg" /> <img width="45" title="Vite" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" /> </p>
+<br/>
+📝 Sobre o Projeto
 
-A base do projeto é construída com React usando TypeScript, trazendo segurança, organização e melhor experiência de desenvolvimento.
+Este projeto é uma To-Do List onde você pode criar, editar e remover tarefas com uma interface moderna e acessível.
 
-🧭 React Router DOM
+A aplicação utiliza:
 
-Utilizei React Router para controlar a navegação do app.
-Mesmo sendo um projeto com uma única página principal, o router permite crescer a aplicação no futuro sem complicações.
+Zustand com persistência (localStorage) → mantém as tarefas salvas mesmo após fechar o navegador
 
-📦 Zustand + persist
+Shadcn UI → componentes profissionais e acessíveis
 
-Para o gerenciamento de estado, escolhi o Zustand, por ser simples, leve e extremamente performático.
+React Hook Form → controle dos formulários
 
-O middleware persist foi usado para salvar automaticamente todas as tasks no localStorage.
-Isso significa que:
+Tailwind CSS → estilização rápida e consistente
 
-as tarefas continuam lá mesmo após fechar o navegador
+Dialog + Form + Checkbox → criação prática de novas tarefas
 
-o estado é restaurado automaticamente
+O objetivo foi criar algo simples, bonito e eficiente.
 
-nenhuma lógica extra é necessária para salvar manualmente
+<br/>
+🎯 Funcionalidades
 
-🎨 Shadcn UI
+✔️ Adicionar tarefas
+✔️ Remover tarefas
+✔️ Editar texto das tarefas
+✔️ Cada tarefa recebe a data automática de criação
+✔️ Armazenamento no localStorage com Zustand persist
+✔️ Interface usando Shadcn UI + Tailwind
+✔️ Modal de criação usando Dialog
+✔️ Tudo responsivo e rápido
 
-A interface foi construída usando Shadcn UI, que combina Radix UI + Tailwind para criar componentes acessíveis, bonitos e fáceis de customizar.
+<br/>
+📦 Tecnologias em Detalhe
+🧩 Zustand + Persist
 
-Alguns componentes usados:
+Usei Zustand para gerenciar o estado das tarefas e habilitei a extensão persist, que salva tudo automaticamente no localStorage.
 
-Dialog (modal de adicionar/editar)
+🎨 Shadcn/UI
 
-Button
+Todos components estilizados com Tailwind.
 
-Input
+🧪 React Hook Form
 
-Checkbox
+Usado para capturar os dados.
 
-Ícones do Lucide
+🛣️ React Router
 
-O resultado é uma interface limpa, moderna e consistente.
+Utilizado apenas para estruturar a rota principal da aplicação.
 
-🌈 Tailwind CSS
+<br/>
+📁 Estrutura Simplificada do Projeto
+src/
+ ├── components/
+ │    ├── task.tsx
+ │    ├── add-task-dialog.tsx
+ ├── store/
+ │    └── task-store.ts
+ ├── pages/
+ │    └── task-list.tsx
+ ├── App.tsx
+ └── main.tsx
 
-Todo o estilo da aplicação é feito com Tailwind CSS, deixando o design visual rápido de implementar e altamente responsivo.
-
-✔️ Funcionalidades
-
-Adicionar tarefa
-
-Editar tarefa
-
-Remover tarefa
-
-Marcar/desmarcar como concluída
-
-Persistência automática no localStorage
-
-Modal para criação/edição
-
-UI amigável e responsiva
-
-▶️ Como Rodar o Projeto
+<br/>
+🖥️ Como Rodar
 npm install
 npm run dev
-
-🧠 Aprendizados
-
-Durante o projeto, aprimorei meu conhecimento em:
-
-gerenciamento de estado com Zustand
-
-uso de persistência no navegador
-
-criação de modais e UI acessível com Shadcn
-
-organização de componentes
-
-React Router com rotas modernas
-
-Tailwind aplicado a layouts reais
-
-🔮 Próximos Passos
-
-Filtros de tarefas (todas, concluídas, abertas)
-
-Animações com Framer Motion
-
-Dark mode
-
-Drag & drop
-
-Login e API futuramente
