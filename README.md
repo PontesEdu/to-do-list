@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+📝 To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de To-Do List desenvolvido para praticar React, gerenciamento de estado, interface moderna e persistência de dados.
+O usuário pode adicionar, editar, remover e marcar tarefas como concluídas. Todas as informações ficam salvas automaticamente no localStorage, garantindo que nada seja perdido ao recarregar a página.
 
-Currently, two official plugins are available:
+🚀 Tecnologias Utilizadas
+⚛️ React + TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A base do projeto é construída com React usando TypeScript, trazendo segurança, organização e melhor experiência de desenvolvimento.
 
-## React Compiler
+🧭 React Router DOM
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Utilizei React Router para controlar a navegação do app.
+Mesmo sendo um projeto com uma única página principal, o router permite crescer a aplicação no futuro sem complicações.
 
-## Expanding the ESLint configuration
+📦 Zustand + persist
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Para o gerenciamento de estado, escolhi o Zustand, por ser simples, leve e extremamente performático.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O middleware persist foi usado para salvar automaticamente todas as tasks no localStorage.
+Isso significa que:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+as tarefas continuam lá mesmo após fechar o navegador
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+o estado é restaurado automaticamente
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+nenhuma lógica extra é necessária para salvar manualmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🎨 Shadcn UI
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+A interface foi construída usando Shadcn UI, que combina Radix UI + Tailwind para criar componentes acessíveis, bonitos e fáceis de customizar.
+
+Alguns componentes usados:
+
+Dialog (modal de adicionar/editar)
+
+Button
+
+Input
+
+Checkbox
+
+Ícones do Lucide
+
+O resultado é uma interface limpa, moderna e consistente.
+
+🌈 Tailwind CSS
+
+Todo o estilo da aplicação é feito com Tailwind CSS, deixando o design visual rápido de implementar e altamente responsivo.
+
+✔️ Funcionalidades
+
+Adicionar tarefa
+
+Editar tarefa
+
+Remover tarefa
+
+Marcar/desmarcar como concluída
+
+Persistência automática no localStorage
+
+Modal para criação/edição
+
+UI amigável e responsiva
+
+▶️ Como Rodar o Projeto
+npm install
+npm run dev
+
+🧠 Aprendizados
+
+Durante o projeto, aprimorei meu conhecimento em:
+
+gerenciamento de estado com Zustand
+
+uso de persistência no navegador
+
+criação de modais e UI acessível com Shadcn
+
+organização de componentes
+
+React Router com rotas modernas
+
+Tailwind aplicado a layouts reais
+
+🔮 Próximos Passos
+
+Filtros de tarefas (todas, concluídas, abertas)
+
+Animações com Framer Motion
+
+Dark mode
+
+Drag & drop
+
+Login e API futuramente
