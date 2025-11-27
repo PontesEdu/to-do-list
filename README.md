@@ -1,8 +1,8 @@
-✅ To-Do List — React + Zustand + Shadcn UI
+# To-Do List — React + Zustand + Shadcn UI
 
 Aplicação Front-End
 
-Uma To-Do List moderna, rápida e organizada, construída com React, Zustand, Shadcn UI, Tailwind CSS, React Hook Form e persistência com localStorage.
+Uma To-Do List, rápida e organizada, construída com React, Zustand, Shadcn UI, Tailwind CSS, React Hook Form e persistência com localStorage.
 Meu foco neste projeto foi criar uma experiência simples e eficiente, com design limpo e componentes profissionais.
 
 <br/>
@@ -11,9 +11,9 @@ Meu foco neste projeto foi criar uma experiência simples e eficiente, com desig
 <br/>
 📝 Sobre o Projeto
 
-Este projeto é uma To-Do List onde você pode criar, editar e remover tarefas com uma interface moderna e acessível.
+Este projeto é uma To-Do List onde você pode criar, editar e remover tarefas.
 
-A aplicação utiliza:
+## A aplicação utiliza:
 
 Zustand com persistência (localStorage) → mantém as tarefas salvas mesmo após fechar o navegador
 
@@ -28,7 +28,7 @@ Dialog + Form + Checkbox → criação prática de novas tarefas
 O objetivo foi criar algo simples, bonito e eficiente.
 
 <br/>
-🎯 Funcionalidades
+## 🎯 Funcionalidades
 
 ✔️ Adicionar tarefas
 ✔️ Remover tarefas
@@ -58,19 +58,6 @@ Usado para capturar os dados.
 Utilizado apenas para estruturar a rota principal da aplicação.
 
 <br/>
-📁 Estrutura Simplificada do Projeto
-src/
- ├── components/
- │    ├── task.tsx
- │    ├── add-task-dialog.tsx
- ├── store/
- │    └── task-store.ts
- ├── pages/
- │    └── task-list.tsx
- ├── App.tsx
- └── main.tsx
-
-<br/>
-🖥️ Como Rodar
+# 🖥️ Como Rodar
 npm install
 npm run dev
